@@ -1,4 +1,6 @@
 
+INPUT_PATH = '../input/censustract-00-10.csv'
+OUTPUT_PATH = '../output/report.csv'
 
 def parse_line(raw_line):
     line = raw_line.split(',')
@@ -97,13 +99,13 @@ def write_file(summary, filename):
 
 
 
-file1 = open('../input/censustract-00-10.csv', 'r') 
+file1 = open(INPUT_PATH, 'r') 
 Lines = file1.readlines() 
 
 df = read_file(Lines)
 summary = process_data(df)
 
-write_file(summary, '../output/report.csv')
+write_file(summary, OUTPUT_PATH)
 
 
 
