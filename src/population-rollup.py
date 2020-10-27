@@ -1,6 +1,6 @@
 
-INPUT_PATH = '../input/censustract-00-10.csv'
-OUTPUT_PATH = '../output/report.csv'
+INPUT_PATH = './input/censustract-00-10.csv'
+OUTPUT_PATH = './output/report.csv'
 
 def parse_line(raw_line):
     line = raw_line.split(',')
