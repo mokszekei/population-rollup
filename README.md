@@ -73,8 +73,13 @@ The lines in the output file are sorted by Core Based Statstical Area Code (asce
             |   ├── input
             |   │   └── censustract-00-10.csv
             |   |__ output
-            |   │   └── report.csv            
+            |   │   └── report.csv   
             ├── my-test_2
+            |   ├── input
+            |   │   └── censustract-00-10.csv
+            |   |__ output
+            |   │   └── report.csv  
+            ├── my-test_3
                 ├── input
                 │   └── censustract-00-10.csv
                 |── output
