@@ -28,7 +28,6 @@ In this task, I want to know for each Core Based Statistical Area, the
 * total population in 2010 and 
 * average population percent change for census tracts in this Core Based Statistical Area
 
-
 ## Output
 
 After reading and processing the input file, my code will create an output file, `report.csv`, with as many lines as unique Core Based Statistical Areas found in the input file. If there are no core areas in the input file, my code will still create the `report.csv` file but it contains no lines.
@@ -42,6 +41,16 @@ For every line that exists in the output file, the following fields are written 
 * average population percent change for census tracts in this CBSA. Round to two decimal places using standard rounding conventions (i.e., Any percentage between 0.005% and 0.010%, inclusive, should round to 0.01% and anything less than 0.005% should round to 0.00%)
 
 The lines in the output file are sorted by Core Based Statstical Area Code (ascending)
+
+## Testing
+
+* my_test_1 \
+(a) I shuffled the order of rows, to test whether the code can catch every row of a Core Based Statistical Area when they are not grouped together \
+(b) I added one mockup row with valid population data but invalid population percentage change data, to test whetehe the code can handle missing value in percentage change data.
+* my_test_2 \
+(a) I added one mockup row with empty string in population 2000/2010 but valid population percentage change data, to test whether the code can handle missing value in population while calculating the average percentage change correctly.
+* my_test_3 \
+(a) All rows in the input file contain no core areas data. The code should still creat report.csv but contains no line.
 
 ## Repo directory structure
 
